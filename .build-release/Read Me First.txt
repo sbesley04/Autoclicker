@@ -1,0 +1,43 @@
+Autoclicker — installation
+==========================
+
+1. Drag Autoclicker into the Applications folder.
+
+2. The first time you open it, macOS will refuse, saying Autoclicker
+   "is damaged" or that it cannot check it for malicious software.
+   This is expected: the app is not signed with a paid Apple Developer
+   certificate. It is not damaged.
+
+   To open it:
+     - Open System Settings > Privacy & Security
+     - Scroll down to the Security section
+     - Next to "Autoclicker was blocked", click "Open Anyway"
+     - Confirm with your password / Touch ID
+
+   (On older macOS you can instead right-click the app > Open > Open.)
+
+   IF THAT DOESN'T WORK — if macOS insists the app is "damaged" and no
+   "Open Anyway" button appears — open the Terminal app and paste this
+   line, then press Return:
+
+     xattr -dr com.apple.quarantine /Applications/Autoclicker.app
+
+   That removes the "downloaded from the internet" flag. Then open the app
+   normally. It only has to be done once.
+
+3. Grant Accessibility permission when asked:
+     System Settings > Privacy & Security > Accessibility
+     -> turn Autoclicker ON
+
+   This is required. The app uses it to detect your trigger button and to
+   send the clicks. Without it the app cannot click at all.
+
+4. Open Autoclicker, go to the Trigger section, click "Detect Input",
+   press the mouse button or key you want to use, then click
+   "Assign as Trigger". Turn on "TRIGGER ARMED" on the Dashboard.
+
+Emergency stop: Command + Shift + Escape stops all clicking instantly,
+from anywhere, even inside a game. You can change it in the Safety section.
+
+Requires macOS 13 (Ventura) or newer. Runs natively on both Apple Silicon
+and Intel Macs.
