@@ -9,9 +9,7 @@ Built with **Swift + SwiftUI**, with **AppKit / CoreGraphics (CGEvent)** for the
 low-level input core. No Electron, no web views.
 
 > **Intended use:** accessibility assistance, UI testing, repetitive-task relief and
-> controlled local automation. The humanized timing exists to feel natural and avoid
-> hammering your own machine — not to evade anti-bot systems, application safeguards,
-> rate limits or platform rules. Respect the terms of any software you automate.
+> definitely not hypixel
 
 ---
 
